@@ -13,6 +13,7 @@ static void question_1() {
     vector<int> vec;
     copy(istream_iterator<int>(cin), istream_iterator<int>(), back_inserter(vec));
     remove_duplicates(vec);
+    sort(begin(vec), end(vec));
     for(const auto& item: vec)
         cout << item << " ";
 }
